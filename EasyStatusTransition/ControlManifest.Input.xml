@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="VinnyBControls" constructor="EasyStatusTransition" version="0.0.1" display-name-key="EasyStatusTransition" description-key="EasyStatusTransition description" control-type="standard">
+    <external-service-usage enabled="false">
+    </external-service-usage>
+    <property name="ModifiedOn" display-name-key="ModifiedOn" description-key="ModifiedOn" of-type="DateAndTime.DateAndTime" usage="bound" required="true" />
+    <property name="AllowSelectLowerLevels" display-name-key="Execute multiple requests until the selected depth" description-key="Default [false]" of-type="Enum" usage="input" required="true">
+      <value name="No" display-name-key="No">0</value>
+      <value name="Yes" display-name-key="Yes">1</value>
+    </property>
+    <property name="Depth" display-name-key="Depth allowed transitions" description-key="Default [1]" of-type="Whole.None" usage="input" required="false" />
+    <resources>
+      <code path="index.ts" order="1"/>
+      <css path="css/EasyStatusTransition.css" order="1" />
+    </resources>
+    <feature-usage>
+      <uses-feature name="Utility" required="true" />
+      <uses-feature name="WebAPI" required="true" />
+    </feature-usage>
+  </control>
+</manifest>
