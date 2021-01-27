@@ -26,3 +26,6 @@ However, I chose to allow users to define the number of levels to be displayed. 
 
 ### Developers
 After clone the repository, execute the command "npm install" to restore all packages.
+
+### Incompatible with
+- Specials status change: WonOpportunity, IncidentResolution, CloseQuoteRequest, etc..
